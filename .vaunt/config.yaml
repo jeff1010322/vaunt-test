@@ -1,0 +1,11 @@
+version: 0.0.1
+achievements:
+  - achievement:
+      name: Closer
+      icon: https://raw.githubusercontent.com/vauntdev/example/main/.vaunt/closer.png
+      description: Awarded to assignees of an issue marked as moderator.
+      triggers:
+        - trigger:
+            actor: assignees
+            action: issue
+            condition: closed = true & labels in ['moderator']
