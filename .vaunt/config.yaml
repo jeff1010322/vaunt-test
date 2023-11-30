@@ -9,3 +9,12 @@ achievements:
             actor: assignees
             action: issue
             condition: closed = true & labels in ['moderator']
+  - achievement:
+      name: Helpful Commenter
+      icon: https://raw.githubusercontent.com/vauntdev/example/main/.vaunt/every_bit_counts.png
+      description: Create a helpful comment on an issue approved by moderators
+      triggers:
+        - trigger:
+            actor: author
+            action: issue_comment
+            condition: reaction in ['THUMBS_UP'] & reactor in ['jeff1010322']
