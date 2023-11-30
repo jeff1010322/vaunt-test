@@ -17,4 +17,4 @@ achievements:
         - trigger:
             actor: author
             action: issue_comment
-            condition: reaction in ['THUMBS_UP'] & reactor in ['jeff1010322']
+            condition: reaction in ['THUMBS_UP'] & reactors in ['jeff1010322']
