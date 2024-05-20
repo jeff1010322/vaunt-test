@@ -42,7 +42,7 @@ webhooks:
       type: github
       metadata:
         discussion:
-          repository: VauntDev/example
+          repository: jeff1010322/vaunt-test
           title: Vaunt Achievements
       events:
         - event:
